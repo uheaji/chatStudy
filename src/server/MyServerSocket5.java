@@ -93,7 +93,7 @@ public class MyServerSocket5 {
 				String tempMsg = gubun[2];
 
 				for (int i = 0; i < vc.size(); i++) {
-					if (vc.get(i).id.equals(tempId)) {
+					if (vc.get(i).id != null && vc.get(i).id.equals(tempId)) {
 						vc.get(i).writer.println(id + "-->" + tempMsg);
 						vc.get(i).writer.flush();
 					}
