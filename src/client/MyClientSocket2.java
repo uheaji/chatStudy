@@ -25,7 +25,7 @@ public class MyClientSocket2 {
 			writer = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
 			reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			
-			new Thread(new Runnable() { // 익명클래스
+			new Thread (new Runnable() { // 익명클래스
 				
 				@Override
 				public void run() {
